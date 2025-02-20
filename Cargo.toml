@@ -1,0 +1,15 @@
+[workspace]
+members = ["xtask"]
+
+[package]
+name = "gain_vst"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+nih-plug = { git = "https://github.com/robbert-vdh/nih-plug.git", package = "nih_plug", features = ["assert_process_allocs", "standalone"] }
+parking_lot = "0.12"
+
+[lib]
+crate-type = ["cdylib"]
+
