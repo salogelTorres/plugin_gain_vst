@@ -53,7 +53,6 @@ members = ["xtask"]
 5. Now we can code our GainPlugin in src/lib.rs
 6. Then run:
 ```bash
-cargo run -p 
-xtask -- bundle gain_vst --release
+cargo run -p xtask -- bundle gain_vst --release
 ```
 7. Your VST3 plugin is located in /target/bundled/gain_vst.vst3.
