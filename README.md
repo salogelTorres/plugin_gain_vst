@@ -54,7 +54,7 @@ Finally, update your root Cargo.toml to include the workspace configuration:
 [workspace]
 members = ["xtask"]
 ```
-5. Now we can code our GainPlugin in src/lib.rs
+5. Now we can code our GainPlugin in src/lib.rs, but first, rename src/main.rs to src/lib.rs
 6. Then run:
 ```bash
 cargo run -p xtask -- bundle gain_vst --release
