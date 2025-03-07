@@ -19,6 +19,8 @@ edition = "2021"
 [dependencies]
 nih-plug = { git = "https://github.com/robbert-vdh/nih-plug.git", package = "nih_plug", features = ["assert_process_allocs", "standalone"] }
 parking_lot = "0.12"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
 
 [lib]
 crate-type = ["cdylib"]
@@ -37,6 +39,8 @@ edition = "2021"
 
 [dependencies]
 nih_plug_xtask = { git = "https://github.com/robbert-vdh/nih-plug.git" }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
 ```
 Add this content to xtask/src/main.rs:
 ```rust
